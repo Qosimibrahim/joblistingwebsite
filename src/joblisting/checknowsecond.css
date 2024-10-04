@@ -1,0 +1,117 @@
+.jobDetails {
+    position: fixed;
+    top: 20%;
+    left: 34%;
+    width: 70vh !important;
+    height: 50% !important;
+    background-color: rgba(255, 255, 255, 1); 
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.jobDetails .firstdiv .front {
+    width: 60vh !important;
+    color: #0a0a0a !important;
+    margin-left: -2%;
+    margin-top: -15px !important;
+}
+
+.jobDetails .firstdiv {
+    margin-left: 5%;
+    margin-top: 10%;
+    position: relative; /* Set this to relative */
+}
+
+.jobDetails p {
+    width: 60vh !important;
+}
+
+.jobDetails .close-btn {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+.jobDetails .close-btn:hover {
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+    border-left: 3px solid #0a0a0a;
+    background-color: black;
+    color: #fff;
+}
+
+.jobDetails .apply {
+    position: absolute;
+    top: 89%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(127, 127, 194);
+    color: black;
+    border-radius: 3px;
+    transition: 0.4s;
+}
+
+.jobDetails .apply:hover {
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1); 
+    border-left: 3px solid #0a0a0a;
+    background-color: black;
+    color: #fff;
+}
+
+.jobDetails .skillss {
+        position: absolute;
+        top: 70%;
+        left: 2%;
+        z-index: 10;
+        margin-bottom: 50px;
+
+}
+
+.jobDetails .skillss h4 {
+    font-weight: bold;
+}
+
+.skillss span {
+    background-color: black;
+    margin: 2px;
+    padding: 5px;
+    border-radius: 2px;
+    color: #fff;
+}
+
+
+/* Media Queries for Small Screens */
+@media (max-width: 768px) {
+    .jobDetails {
+        width: 90vw;
+        left: 5vw;
+        height: auto;
+        top: 10vh;
+    }
+    
+    .jobDetails .firstdiv, .jobDetails .skillss {
+        margin-left: 0;
+    }
+    
+    .jobDetails p, .jobDetails .front {
+        width: 100%;
+    }
+
+    .jobDetails .apply {
+        top: auto;
+        bottom: 5%;
+    }
+}
+
+/* Media Queries for Extra Small Screens */
+@media (max-width: 480px) {
+    .jobDetails {
+        width: 95vw;
+        height: auto;
+        top: 5vh;
+    }
+
+    .jobDetails .apply {
+        padding: 0.6rem 1.2rem;
+    }
+}
